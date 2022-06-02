@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Anek+Tamil:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+* {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Akshar", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  height: 5%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 19%, rgba(0, 212, 255, 1) 100%);
+  color: #fff;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
+header img#logo {
+  margin: 0 1rem 0 1rem;
+  height: 100%;
+}
+
+header a {
+  height: 100%;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+header a:hover {
+  color: #03bcf5;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+main {
+  background-image: url(./img/bw018_1.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 130rem;
+  min-height: 100%;
+  padding: 10px;
+}
+
+section#message {
+  padding: 1.5rem;
+  background-color: rgb(197, 255, 214);
+  color: #ffffff;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+span#close:hover{
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}
+
+section#register {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+section#register h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5rem;
+  color: blue;
+  font-size: 3rem;
+}
+section#register form {
+  width: 50%;
+}
+
+section#register form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.5rem;
+  color: #160174;
+  outline: none;
+  border: solid;
+  border-radius: 40px 40px 40px 40px; 
+  border-color: blue;
+  background-color: #88f0f0;
+}
+
+section#register form label {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+section#register form button {
+  padding: 1rem;
+  border-radius: 40%;
+  font-size: 1.2rem;
+  display: flex;
+  margin: 0 auto;
+  background: blue;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+section#register form button:hover {
+  background: radial-gradient(#4950b6, blue);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+section#detalhes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+table tr:nth-child(odd) {
+  color: #ffffff;
+}
+
+table thead th {
+  color: #ffffff;
+}
+
+section#pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+section#pokedex a {
+  text-decoration: none;
+}
+
+
+article.card {
+  height: 350px;
+  width: 220px;
+  box-shadow: 5px 5px 5px 5px #616161;
+  border-radius: 40px 40px;
+  background: linear-gradient(#005aa7, #fffde4);
+  cursor: pointer;
+  transition: 0.4s ease-in-out all;
+}
+
+article.card div.card_image {
+  height: 80%;
+}
+
+article.card img {
+  height: 80%;
+}
+
+article.card div.dados_pokemon {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+article.card.id {
+  color: #05f51f;
+}
+
+article.card:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  height: 4rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 19%, rgba(0, 212, 255, 1) 100%);
+  text-align: center;
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  padding: auto;
+}

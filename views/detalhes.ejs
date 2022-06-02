@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <title> Detalhes </title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="detalhes">
+            <img src="<%= pokemon.img %> " alt="pokemon"> 
+            <h1> <%= pokemon.nome %> </h1>
+            <table>
+                <thead>
+                    <th colspan="2"> Detalhes </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Nome </td>
+                        <td> <%= pokemon.nome %>  </td>
+                    </tr>
+
+                    <tr>
+                        <td> descricao </td>
+                        <td> <%= pokemon.descricao%> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td> Tipo </td>
+                        <td> <%= pokemon.tipo %> </td>
+
+                    <tr>
+                        <td> habilidade </td>
+                        <td> <%= pokemon.habilidade %> </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

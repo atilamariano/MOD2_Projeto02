@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <title>Pokedex</title>
+  </head>
+
+  <body>
+
+    <% if(message != "") {  %>
+      <section id="message">
+          <p><%= message %></p> <span id="close">&times;</span>
+      </section>
+  <% }  %>
+    <%- include('./partials/header.ejs') %>
+
+    <main>
+
+      <section id="pokedex">
+        <% pokedex.forEach(element => { %>
+        <a href="/detalhes/<%= element.id %> ">
+          <article class="card">
+           
+            <div class="card_image">
+              <img src="<%= element.img %> " alt="<%= element.nome %> " />
+            </div>
+
+
+            <div class="dados_pokemon">
+              <h4><%= element.nome %></h4>
+              <div><%= element.id %></div>
+            </div>
+
+          </article>
+        <% }) %>
+      </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+
+  <script src="/script.js"></script>
+  
+</html>

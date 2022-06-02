@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <title> Cadastro </title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="register">
+            <h2>Novo Pokemon!!</h2>
+    
+            <form id="form" action="/cadastro" method="post">
+              <label for="img">img Link</label>
+              <input  type="url" name="img" id="img" required/>
+    
+              <label for="nome">nome</label>
+              <input type="text" id="nome" name="nome" required/>
+    
+              <!-- <label for="descricao">descricao</label>
+              <input type="text" name="descricao" id="descricao" required/>
+     -->
+              <label for="tipo">tipo</label>
+              <input type="text" name="tipo" id="tipo" required/>
+    
+              <!-- <label for="altura">altura</label>
+              <input type="text" name="altura" id="altura" required/>
+    
+              <label for="peso">peso</label>
+              <input type="text" name="peso" id="peso" required/> -->
+    
+              <label for="categoria">categoria</label>
+              <input type="text" name="categoria" id="categoria" required/>
+    
+              <label for="habilidade">habilidade</label>
+              <input type="text" name="habilidade" id="habilidade" required/>
+    
+              <button id="submit" type="submit">Cadastar</button>
+            </form>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+<script src="/script.js"></script>
+</html>
