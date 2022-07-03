@@ -24,8 +24,3 @@ O terminal irá gerar um link, que irá dar acesso a porta ao qual ele estará r
 Exemplo: Servidor rodando em http://localhost:3000
 Desenvolvimento
 No desenvolvimento do projeto foi realizado um CRUD básico, com os dados guardados na memória.
-
-Construído com
-Tecnologias e linguagens utilizadas no projeto:
-
-
