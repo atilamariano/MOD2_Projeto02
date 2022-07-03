@@ -1,5 +1,9 @@
 # MOD2_Projeto02
 
+Linguagem: JavaScript e EJS.
+
+Tecnologias: Express, Nodemon, HTML e CSS
+
 Link do deploy: https://projetopokedex2022.herokuapp.com/
 
 POKEDEX
@@ -24,5 +28,4 @@ No desenvolvimento do projeto foi realizado um CRUD básico, com os dados guarda
 Construído com
 Tecnologias e linguagens utilizadas no projeto:
 
-Linguagem: JavaScript e EJS
-Tecnologias: Express, Nodemon, HTML e CSS
+
